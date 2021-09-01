@@ -7,10 +7,10 @@ $main: #126E82;
 $main-dark: #132C33;
 
 // Update Bulma's global variables
-$grey-dark: $grey;
-$grey-light: $main-light;
+$grey-dark: $main-dark;
+$grey-light: $grey;
 $primary: $main;
-$link: $main-dark;
+$link: $main-light;
 
 @import "../node_modules/bulma/bulma.sass";
 
