@@ -1,8 +1,16 @@
 # api-test
 
-Empty project.
+Recruitment task
 
-## Building and running on localhost
+## Used tools:
+1) react
+2) Yup
+3) formik
+4) sass
+5) Bulma
+6) Webpack
+
+### Building and running on localhost
 
 First install dependencies:
 
