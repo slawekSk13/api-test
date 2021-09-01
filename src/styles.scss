@@ -1,0 +1,16 @@
+@charset "utf-8";
+// set colors
+
+$grey: #D8E3E7;
+$main-light: #51C4D3;
+$main: #126E82;
+$main-dark: #132C33;
+
+// Update Bulma's global variables
+$grey-dark: $grey;
+$grey-light: $main-light;
+$primary: $main;
+$link: $main-dark;
+
+@import "../node_modules/bulma/bulma.sass";
+
