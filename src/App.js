@@ -3,6 +3,7 @@ import { hot } from 'react-hot-loader/root';
 
 import {getFromApi, postToApi, updateInApi, deleteFromApi} from "./utilities/ApiMethods";
 import {PostsView} from "./views/PostsView";
+import {Form} from "./components/Form/Form";
 
 
 const App = () => {
@@ -20,8 +21,11 @@ const handleDelete = (id) => {
 const handleNew = () => console.log('new');
 
     return (
+        <>
+            <Form />
        <PostsView posts={posts} handleNew={handleNew} handleEdit={handleEdit} handleDelete={handleDelete} />
-    )
+        </>
+            )
 }
 
 export default hot(App);

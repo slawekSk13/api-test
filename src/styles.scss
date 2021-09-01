@@ -35,3 +35,12 @@ $link: $main-light;
     margin: 0 auto;
   }
 }
+
+form {
+  max-width: 405px;
+  margin: 1rem auto;
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
