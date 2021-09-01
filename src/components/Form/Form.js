@@ -1,7 +1,7 @@
 import React from 'react';
 import {Formik} from 'formik';
 
-const Form = ({initialValues, handleSubmit}) => {
+const Form = ({initialValues, handleSubmit, handleCancel}) => {
     return (
         <Formik initialValues={initialValues ? {...initialValues} : {
             title: '',
@@ -35,7 +35,7 @@ const Form = ({initialValues, handleSubmit}) => {
                     /></div></div>
                     <div className='buttons'>
                     <button type='submit' className='button is-success'>Send</button>
-                    <button className='button is-danger'>Cancel</button>
+                    <button onClick={handleCancel} className='button is-danger'>Cancel</button>
                     </div>
                 </form>
             )}

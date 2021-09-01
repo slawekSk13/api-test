@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Card = ({post, handleEdit, handleDelete}) => {
     return (
@@ -14,8 +15,8 @@ const Card = ({post, handleEdit, handleDelete}) => {
                 </div>
             </div>
             <footer className='card-footer'>
-                <button onClick={handleEdit} className="button card-footer-item is-primary">Edytuj</button>
-                <button onClick={() => handleDelete(post.id)} className="button card-footer-item is-danger">Kasuj</button>
+                <button onClick={() => handleEdit(post)} className="button card-footer-item is-primary">Edit</button>
+                <button onClick={() => handleDelete(post.id)} className="button card-footer-item is-danger">Delete</button>
 
             </footer>
         </article>
