@@ -1,21 +1,22 @@
 @charset "utf-8";
 // set colors
 
-$main: #126E82;
+$main: #126e82;
 
 // Update Bulma's global variables
 $primary: $main;
 
 @import "../node_modules/bulma/bulma.sass";
 
-.card, .main {
+.card,
+.main {
   width: 90%;
   max-width: 450px;
   margin: 1rem auto 0;
   .card-footer {
-    padding: .3rem;
+    padding: 0.3rem;
     .button {
-      margin: .3rem;
+      margin: 0.3rem;
     }
     .card-footer-item:hover {
       cursor: pointer;
