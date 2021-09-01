@@ -1,18 +1,16 @@
-
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { hot } from 'react-hot-loader/root';
 
-class App extends React.Component {
-  render() {
-    const { name } = this.props;
+import {getFromApi, postToApi, updateInApi, deleteFromApi} from "./utilities/ApiMethods";
+
+const App = () => {
+const [posts, setPosts] = useState([]);
+
+useEffect(() => getFromApi(data => setPosts(data), data => console.warn(data)),[]);
+
     return (
-      <>
-        <h1>
-          Hello {name}
-        </h1>
-      </>
-    );
-  }
+        posts.map(post => <p>{post.title}</p>)
+    )
 }
 
 export default hot(App);
