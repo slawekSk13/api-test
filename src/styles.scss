@@ -14,7 +14,7 @@ $link: $main-light;
 
 @import "../node_modules/bulma/bulma.sass";
 
-.card {
+.card, .main {
   width: 90%;
   max-width: 450px;
   margin: 1rem auto 0;
@@ -27,5 +27,11 @@ $link: $main-light;
       cursor: pointer;
     }
   }
+}
 
+.main {
+  .is-success {
+    max-width: 405px;
+    margin: 0 auto;
+  }
 }

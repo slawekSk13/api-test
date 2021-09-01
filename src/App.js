@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react";
 import { hot } from 'react-hot-loader/root';
 
 import {getFromApi, postToApi, updateInApi, deleteFromApi} from "./utilities/ApiMethods";
-import {Card} from "./components/Card/Card";
+import {PostsView} from "./views/PostsView";
+
 
 const App = () => {
 const [posts, setPosts] = useState([]);
@@ -19,8 +20,7 @@ const handleDelete = (id) => {
 const handleNew = () => console.log('new');
 
     return (
-        posts.map(post => <Card key={post.id} post={post} handleEdit={handleEdit} handleDelete={handleDelete} handleNew={handleNew}/>)
-        // posts.map(post => <p key={post.id}>{post.title}</p>)
+       <PostsView posts={posts} handleNew={handleNew} handleEdit={handleEdit} handleDelete={handleDelete} />
     )
 }
 
