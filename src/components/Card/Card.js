@@ -4,7 +4,7 @@ const Card = ({post, handleEdit, handleDelete, handleNew}) => {
     return (
         <article className='card'>
             <header className='card-header'>
-                <p className="card-header-title">
+                <p className="card-header-title title">
                     {post.title}
                 </p>
             </header>
@@ -14,9 +14,9 @@ const Card = ({post, handleEdit, handleDelete, handleNew}) => {
                 </div>
             </div>
             <footer className='card-footer'>
-                <button onClick={} className="card-footer-item">Edytuj</button>
-                <button onClick={} className="card-footer-item">Kasuj</button>
-                <button onClick={} className="card-footer-item">Dodaj Nowy</button>
+                <button onClick={handleEdit} className="button card-footer-item is-primary">Edytuj</button>
+                <button onClick={() => handleDelete(post.id)} className="button card-footer-item is-danger">Kasuj</button>
+                <button onClick={handleNew} className="button card-footer-item is-success">Nowy</button>
             </footer>
         </article>
     )

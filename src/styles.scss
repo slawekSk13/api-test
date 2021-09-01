@@ -14,3 +14,18 @@ $link: $main-light;
 
 @import "../node_modules/bulma/bulma.sass";
 
+.card {
+  width: 90%;
+  max-width: 450px;
+  margin: 1rem auto 0;
+  .card-footer {
+    padding: .3rem;
+    .button {
+      margin: .3rem;
+    }
+    .card-footer-item:hover {
+      cursor: pointer;
+    }
+  }
+
+}
