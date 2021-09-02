@@ -5,6 +5,7 @@ $main: #126e82;
 
 // Update Bulma's global variables
 $primary: $main;
+$link: $main;
 
 @import "../node_modules/bulma/bulma.sass";
 
