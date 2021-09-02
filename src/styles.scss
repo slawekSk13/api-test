@@ -42,3 +42,11 @@ form {
     margin-top: 1rem;
   }
 }
+
+.pagination {
+  margin: 2rem auto;
+  max-width: 800px;
+  .pagination-link:hover {
+    cursor: pointer;
+  }
+}
