@@ -16,13 +16,13 @@ const Pagination = ({ posts, handlePageChange, currentPage }) => {
     >
       <a
         className="pagination-previous"
-        onClick={() => handlePageChange(currentPage)}
+        onClick={() => handlePageChange(currentPage, pagesCount)}
       >
         Previous
       </a>
       <a
         className="pagination-next"
-        onClick={() => handlePageChange(currentPage + 2)}
+        onClick={() => handlePageChange(currentPage + 2, pagesCount)}
       >
         Next page
       </a>
@@ -35,7 +35,7 @@ const Pagination = ({ posts, handlePageChange, currentPage }) => {
                 ? "pagination-link is-current"
                 : "pagination-link"
             }
-            onClick={() => handlePageChange(el)}
+            onClick={() => handlePageChange(el, pagesCount)}
           >
             {el}
           </li>

@@ -5,8 +5,8 @@ import { Pagination } from "../components/Pagination/Pagination";
 
 const PostsView = ({ posts, handleCreateNew, handleDelete, handleEdit }) => {
   const [page, setPage] = useState(0);
-  const handlePageChange = (value) => {
-    if (value > 0 && value <= posts.length / 10) {
+  const handlePageChange = (value, pagesCount) => {
+    if (value > 0 && value <= pagesCount.length) {
       setPage(parseInt(value) - 1);
     }
   };
